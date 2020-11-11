@@ -234,7 +234,7 @@ a:hover {
 
 .flex .partner-image {
     margin: 10px;
-    width: 210px;
+    width: 200px;
 }
 
 .flex .partner-image img {
@@ -322,7 +322,7 @@ a:hover {
 }
 
 .left-panel, .right-panel {
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .with-text {
