@@ -1,0 +1,747 @@
+/* Universal styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color:  #232323;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.no-style {
+    list-style: none;
+}
+
+
+/* common stylilng start*/
+
+a, a:visited, a:active {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.container {
+    padding: 3% 200px;
+}
+
+.blue-text {
+    color: #488EFF;
+}
+
+.blue-background {
+    background: #2C3964;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* Header styling start */
+
+.header-container {
+    padding: 18px 116px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.logo img{
+    width: 144px;
+}
+
+.navigation {
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+#menu-items {
+    text-align: center;
+    flex-basis: 100%;
+}
+
+#menu-items.open {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background: rgba(112, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9999;
+}
+
+#menu-items .fa-bars{
+    display: none;
+}
+
+.fa-close {
+    display: none;
+}
+
+.navigation ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.navigation ul li:hover a {
+    text-shadow: 0 0 1px black;
+}
+
+.navigation .hamburger {
+    display: none;
+
+}
+
+.header-container a:hover {
+    text-decoration: none;
+}
+
+.header-container button {
+    padding: 6px 15px;
+    margin-left: 50px;
+    font-weight: 700;
+    border-color: #488EFF;
+    border-radius: 3px;
+    color: #488EFF;
+    transition: all 100ms ease-in-out; 
+}
+
+.header-container button:hover {
+    background: #488EFF;
+    color: white;
+}
+
+/* landing page starts from here */
+
+#landing {
+    background: #F6F9FF;
+    position: relative;
+}
+
+#landing .container {   
+    padding: 8% 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#landing .content {
+    width: 60%;
+}
+
+#landing img {
+    position: absolute;
+    top: -40px;
+    right: 18%;
+    width: 120px;
+}
+
+#landing h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 3.1em;
+    word-spacing: 0.4rem;
+}
+
+#landing h1, #landing p, #landing button {
+    margin: 15px;
+}
+
+#landing .blue-bar {
+    position: relative;
+}
+
+#landing .blue-bar:after {
+    content: '';
+    width: 92%;
+    height: 5px;
+    background: #81E6FF;
+    position: absolute;
+    right: 13%;
+    bottom: 0;
+}
+
+#landing p {
+    font-size: 24px;
+}
+
+#landing p:last-of-type {
+    font-size: 17px;
+}
+
+#landing button, #get-started button {
+    padding: 15px 20px;
+    font-size: 18px;
+    color: white;
+    background: #488EFF;
+    border: 1px solid white;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -2px 2px 0 1px rgba(72, 142, 255, 0.8)
+}
+
+#landing button:hover, #get-started button:hover {
+    background: white;
+    color: #488EFF;
+    border: 1px solid #488EFF
+}
+
+/* featured on section starts */
+
+#featured-on {
+    border-bottom: 1px solid #ECF3FF;
+}
+
+#featured-on .container {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex .partner-image {
+    margin: 10px;
+    width: 210px;
+}
+
+.flex .partner-image img {
+    width: 90%;
+}
+
+/* carousel styling */
+
+#experts .left h2, #experts .left h3{
+    font-size: 2rem;
+}
+
+.right .texts h3 {
+    font-size: 1.6rem;
+}
+
+.card {
+    max-width: 90vw;
+    padding: 5%;
+    margin: 2% 0;
+    background: #F3F8FE;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 100px;
+}
+
+.left {
+    width: 55%;
+}
+
+.blue-bottom-border {
+    padding-right: 10px;
+    padding-bottom: 0;
+    border-bottom: 2px solid #1A73E8;
+    display: inline-block;
+}
+
+.left h4, .left p {
+    line-height: 1.3rem;
+    padding-top: 30px;
+}
+
+.right {
+    width: 30%;
+    color: #171717;
+}
+
+.intro-card {
+    background: white;
+    padding: 20px 25px;
+    text-align: center;    
+    position: relative;
+    top: -120px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+}
+
+.intro-card img {
+    width: 220px;
+}
+
+.intro-card * {
+    margin-top: 10px;
+}
+
+/* features style below */
+
+#features h2 {
+    font-size: 2rem;
+}
+
+#features h4 {
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.left-panel, .right-panel {
+    min-width: 400px;
+}
+
+.with-text {
+    width: 45%;
+    padding: 30px;
+}
+
+.with-image {
+    background: #F9FBFF;
+    width: 35%;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    padding: 50px;
+}
+
+.with-image img {
+    position: relative;
+    top: -10px;
+    animation: hover 3s ease-in-out infinite;
+}
+
+@keyframes hover {
+    
+    50% {
+        top: 10px;
+    }
+
+}
+
+.cover h3 {
+    padding: 25px 0;
+    font-weight: 800;
+}
+
+a.pricing {
+    padding: 35px 5px 0 5px;
+    color: #2C3964;
+    border-bottom: 2px solid #1A73E8;
+    font-weight: 600;
+    display: inline-block;
+}
+
+a.pricing:hover {
+    border-color: transparent;
+}
+
+/* feedbacks styling below */
+
+#feedback h2.text-center {
+    font-size: 2rem;
+}
+
+#feedback h4.text-center {
+    margin: 30px auto;
+}
+
+/* Feedback slider below */
+
+.mySlides {
+    display: none;
+    padding: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    padding: 35px 45px;
+    background: #F6F9FF;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 2.2rem;
+}
+
+.text h2, .text h5 {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.text:after {
+    content: '"';
+    color: #1A73E8;
+    font-size: 60px;
+    font-family: 'Coustard', serif;
+    position: relative;
+    bottom: -35px;
+    padding-top: 30px;
+}
+
+.text:before {
+    content: '';
+    background: #D3E4FF;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 50px;
+    width: 50px;
+    margin: 10px 15px 10px 0;
+    background-color: #E9EBEF;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+#feedback .active .dot{
+    background-color: #488EFF;
+}
+
+#feedback .active {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1)
+}
+
+.name-card {
+    background: white;
+    position: relative;
+    bottom: 50px;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.space-around {
+    justify-content: space-evenly;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+#feedback .blue-text a:hover {
+    color: #1c66dd;
+    text-decoration: underline;
+}
+
+/* get started styling below */
+
+#get-started .blue-background {
+    padding: 45px 80px;
+    color: white;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+#get-started .flex .left {
+    width: 60%;
+}
+
+#get-started .flex .right {
+    width: 30%
+}
+
+#get-started button {
+    border: none;
+}
+
+/* footer styling below */
+
+footer .content, .first-content, .second-content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+
+footer .content  {
+    border-bottom: 1px solid lightgrey;
+}
+
+.first-content, .second-content {
+    width: 50%;
+}
+.first-content div, .second-content div {
+    margin: 30px;
+    width: 50% ;
+}
+
+footer .content h5 {
+    font-weight: 600;
+}
+
+footer .content h4 {
+    margin-bottom: 10px;
+}
+
+footer .container {
+    padding-bottom: 5px;
+}
+
+.disclaimer .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 15px 0;
+}
+
+
+.disclaimer h5 {
+    padding-right: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    border-right: 2px solid lightgrey;
+}
+
+.disclaimer a:hover {
+    text-decoration: underline;
+    color: rgb(37, 67, 238);
+}
+
+.disclaimer .social-media .fa {
+    margin-left: 15px;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.disclaimer .fa:hover {
+    background: lightgray;
+}
+
+.disclaimer .social-media .fa-facebook {
+    padding: 5px 10px;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+    padding: 5px;
+}
+
+.fa-pinterest:hover {
+    color: #e60023;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-instagram:hover {
+    color: #3f7298;
+}
+
+
+
+
+
+
+/* rules for responsiveness below */
+
+@media screen and (max-width: 1270px) {
+    .navigation ul {
+        display: none;
+    }
+    
+    .fa-close {
+        display: block;
+    }
+
+    #landing img {
+        display: none;
+    }
+
+    .container, #landing .container {
+        padding: 5%;
+    }
+
+    .navigation .hamburger {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30%;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .navigation .hamburger {
+        right: 35%;
+    }
+
+    .container, #landing .container {
+        padding: 3%;
+    }
+
+    #landing .content {
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .intro-card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .name-card h3 {
+        font-size: 15px;
+    }
+
+    .name-card h5 {
+        font-size: 11px;
+    }
+
+    footer .content {
+        flex-direction: column;
+    }
+
+    .first-content, .second-content {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 890px) {
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .cover {
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .dot {
+        height: 30px;
+        width: 30px;
+    }
+
+    #get-started button {
+        margin-top: 35px;
+    }
+
+    #get-started .flex {
+        align-items: flex-start;
+    }
+
+    #get-started .flex .left, #get-started .flex .right {
+        width: 100%;
+    }
+
+    #get-started .flex .right {
+        text-align: center;
+    }
+
+    #get-started .blue-background {
+        padding: 20px;
+    }    
+
+    .name-card {
+        padding: 5px 15px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navigation .hamburger {
+        right: 12%;
+    }
+
+    .header-container {
+        padding: 23px 0;
+    }
+
+    .header-container button {
+        display: none;
+    }
+
+    .first-content, .second-content {
+        flex-direction: column;
+    }
+
+    .first-content div, .second-content div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px
+    }
+}
