@@ -687,6 +687,14 @@ footer .container {
         border-right: none;
     }
 
+    .slideshow-container {
+        padding: 0;
+    }
+
+    .mySlides {
+        padding: 10px !important;
+    }
+
 }
 
 @media screen and (max-width: 890px) {
@@ -730,10 +738,6 @@ footer .container {
     .name-card {
         padding: 5px 15px;
         flex-direction: column;
-    }
-
-    .slideshow-container {
-        padding: 0;
     }
 }
 
