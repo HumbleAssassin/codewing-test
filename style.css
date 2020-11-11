@@ -755,6 +755,10 @@ footer .container {
     .header-container button {
         display: none;
     }
+
+    .disclaimer {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 300px) {
