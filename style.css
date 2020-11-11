@@ -81,7 +81,7 @@ a:hover {
     flex-basis: 100%;
 }
 
-#menu-items.open {
+.navigation ul.open {
     height: 100vh;
     width: 100vw;
     position: fixed;
