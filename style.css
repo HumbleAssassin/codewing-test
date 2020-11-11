@@ -295,6 +295,7 @@ a:hover {
 
 .intro-card img {
     width: 220px;
+    max-width: 300px;
 }
 
 .intro-card * {
@@ -375,6 +376,7 @@ a.pricing:hover {
 
 #feedback h4.text-center {
     margin: 30px auto;
+    padding: auto 10px;
 }
 
 /* Feedback slider below */
@@ -386,7 +388,7 @@ a.pricing:hover {
 
 /* Slideshow container */
 .slideshow-container {
-    padding: 35px 45px;
+    padding: 5%;
     background: #F6F9FF;
     max-width: 1000px;
     position: relative;
@@ -613,6 +615,11 @@ footer .container {
         display: block;
     }
 
+    #landing h1 {
+        font-size: 2.6rem;
+        display: block;
+    }
+
     #landing img {
         display: none;
     }
@@ -638,7 +645,7 @@ footer .container {
         padding: 3%;
     }
 
-    #landing .content {
+    #landing .container .content {
         width: 100%;
     }
 
@@ -664,12 +671,20 @@ footer .container {
         font-size: 11px;
     }
 
+    footer .footer-content {
+        display: none;
+    }
+
     footer .content {
         flex-direction: column;
     }
 
-    .first-content, .second-content {
-        width: 100%;
+    #experts .container {
+        text-align: center
+    }
+
+    .disclaimer h5 {
+        border-right: none;
     }
 
 }
@@ -716,6 +731,10 @@ footer .container {
         padding: 5px 15px;
         flex-direction: column;
     }
+
+    .slideshow-container {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -729,14 +748,6 @@ footer .container {
 
     .header-container button {
         display: none;
-    }
-
-    .first-content, .second-content {
-        flex-direction: column;
-    }
-
-    .first-content div, .second-content div {
-        width: 100%;
     }
 }
 
