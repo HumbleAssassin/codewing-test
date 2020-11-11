@@ -9,6 +9,7 @@
 body {
     color:  #232323;
     font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .no-style {
@@ -146,7 +147,7 @@ a:hover {
 }
 
 #landing .container {   
-    padding: 8% 200px; 
+    padding: 7% 200px; 
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -326,7 +327,7 @@ a:hover {
 
 .with-text {
     width: 45%;
-    padding: 30px;
+    padding: 25px;
 }
 
 .with-image {
@@ -334,10 +335,11 @@ a:hover {
     width: 35%;
     border-top-right-radius: 35px;
     border-bottom-left-radius: 35px;
-    padding: 50px;
+    padding: 40px;
 }
 
 .with-image img {
+    max-width: 95%;
     position: relative;
     top: -10px;
     animation: hover 3s ease-in-out infinite;
